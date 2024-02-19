@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "gilroy";
 }
 html,
 body {
@@ -12,5 +13,154 @@ body {
 #main {
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: #d0d4d5;
+  position: relative;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav part 1  */
+
+#nav-prt1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav #nav-prt1 img {
+  height: 35px;
+}
+
+/* nav prt 2 */
+
+#nav-prt2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-prt2 h4 {
+  margin-right: 60px;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* nav prt 3  */
+
+#nav-prt3 i {
+  margin-right: 60px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/* i created a content div with two parts left and right  */
+
+/* content - parent of left and right  */
+
+#content {
+  width: 100%;
+  height: calc(100% - 100px);
+  position: relative;
+  display: flex;
+}
+
+/* left start content  */
+
+#left {
+  height: 100%;
+  width: 40%;
+  padding: 80px 150px;
+}
+
+#left h5 {
+  font-size: 20px;
+  color: #535353;
+  margin-bottom: 15px;
+}
+
+#left h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#left p {
+  font-size: 18px;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+#left button {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+}
+
+/* right content here  */
+
+#right {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  padding: 40px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#right::-webkit-scrollbar {
+  display: none;
+}
+
+/* elem styele start here  */
+
+.elem {
+  height: 440px;
+  width: 380px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.elem img {
+  position: absolute;
+  top: 10%;
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.elem h4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #d0d4d5;
+  padding: 17px 34px;
+  border-radius: 6px;
+}
+
+.elem h5 {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  padding: 17px 34px;
+  border-radius: 6px;
+  font-size: 13px;
 }
